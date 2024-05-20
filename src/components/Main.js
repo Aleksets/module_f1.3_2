@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 
 import "../styles/Main.css";
+import Countries from "./Countries";
 
 
-class Main extends Component {
-    render() {
-        return (
-            <main>
-                <div>
-                    <h1>Hello World</h1>
-                </div>
-            </main>
-        );
-    }
+function Main () {
+    return (
+        <main>
+            <Countries></Countries>
+        </main>
+    );
 }
 
 export default Main;
