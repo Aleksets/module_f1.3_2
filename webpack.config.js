@@ -1,4 +1,7 @@
 const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { plugins } = require('@babel/preset-env/lib/plugins-compat-data');
+const { template } = require('@babel/core');
 
 module.exports = {
     entry:  "./src/index.js",
@@ -20,5 +23,10 @@ module.exports = {
                 use: ["style-loader", "css-loader"]
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+                template: "./src/index.html"
+        })
+    ]
 }
