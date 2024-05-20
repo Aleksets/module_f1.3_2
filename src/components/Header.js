@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../styles/Header.css"
 
 
-function Header() {
+function Header(props) {
     let buttonName = "Some button";
     let [count, setNewCount] = useState(0);
     const handleClick = () => {
@@ -12,7 +12,7 @@ function Header() {
    
     return (
         <header>This is header
-            <button className={ "some-button" } onClick={ handleClick }>{ buttonName } clicked { count } times</button>
+            <button className={ "some-button" } onClick={ handleClick }>{ props.buttonName } clicked { count } times</button>
         </header>
     )
 }
