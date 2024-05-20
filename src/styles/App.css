@@ -1,7 +1,4 @@
-div {
-    padding: 10px;
-}
-h1 {
-    text-align: center;
-    color: gold;
+html, body {
+    margin: 0;
+    padding: 0;
 }
